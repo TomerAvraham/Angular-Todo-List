@@ -1,0 +1,9 @@
+<div class="container">
+  <input (change)="server.handelChange($event)" type="text" />
+  <button (click)="server.addTodo()">Add</button>
+  <div>
+    <button (click)="server.fetchTodosByCompleted(true)">completed</button>
+    <button (click)="server.fetchTodosByCompleted(false)">Active</button>
+    <button (click)="server.fetchTodos()">All</button>
+  </div>
+</div>
